@@ -1,0 +1,377 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container-fluid{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background:url(../img/bg.jpg);
+    background-size: 110%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all .5s ease;
+}
+.container2{
+    background: url(../img/bg2.jpg);
+    background-size: 110%;
+    background-position: center;
+}
+.block{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(255, 255, 255, 0.582);
+    text-align: center;
+    position: relative;
+    color: black;
+}
+.block h1{
+    color: black;
+}
+.text1{
+    font-size: 20px;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 40%;
+}
+.btn1, .btn2{
+    width: 100px;
+    height: 40px;
+    margin-top: 15px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.btn1:hover, .btn2:hover{
+    box-shadow: 4px 4px 15px 2px black;
+    transform: scale(1.1);
+}
+.btn1:hover{
+    background-color: rgb(4,169,245);
+    color: white;
+}
+.btn2:hover{
+    background-color: rgb(244,52,73);
+    color: white;
+}
+.box{
+    width: 400px;
+    height: 460px;
+    position: absolute;
+    background-color: white;
+    left: 400px;
+    top: -30px;
+    z-index: 99;
+    transition: .5s ease all;
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.sign-in, .sign-up{
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    transition: .7s ease all;
+    z-index: 999;
+    padding: 50px 45px;
+    text-align: left;
+}
+.sign-up{
+    left: 0px;
+}
+.sign-in{
+    left: -800px;
+}
+.in{
+    left: 0px;
+}
+.up{
+    left: 800px;
+}
+input{
+    width: 100%;
+    height: 40px;
+    margin-top: 20px;
+    padding: 0px 10px;
+    font-size: 16px;
+    outline: none;
+}
+.btn3, .btn4{
+    width: 100px;
+    height: 40px;
+    background-color: rgb(244,52,73);
+    color: white;
+    border: none;
+    font-size: 15px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.btn4{
+    background-color: rgb(4,169,245);
+}
+.btn4:hover{
+    transform: scale(1.1);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 2px black;
+}
+.forgot{
+    margin-top: 20px !important;
+}
+.forgot a{
+    color: rgb(53, 52, 52) !important;
+}
+/* //////////////////////TODO-LIST/////////////////////// */
+
+.container3{
+    display: flex !important;
+    width: 100%;
+    height: 100vh;
+    background: url(../img/Web-Developer-Bootcamp-San-Francisco.jpeg);
+    background-size: 120%;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+}
+.todo{
+    width: 85%;
+    height: 90vh;
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    overflow-x: hidden;
+}
+.menu{
+    width: 35%;
+    height: 100%;
+    border-radius: 10px 0px 0px 10px;
+    background-color: rgba(255, 255, 255, 0.877);
+    overflow-y: scroll;
+}
+.menu::-webkit-scrollbar{
+    width: 4px;
+    background-color: rgb(255, 255, 255);
+}
+.menu::-webkit-scrollbar-thumb{
+    background-color: rgb(3, 3, 3);
+}
+.info{
+    width: 80%;
+    text-align: center;
+    color: black;
+    font-size: 25px;
+    line-height: 60px;
+    border-bottom: 2px solid black;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+.university, .codial, .iTeach{
+    width: 90%;
+    height: 35px;
+    border: 1px solid black;
+    border-radius: 8px;
+    padding: 0px 10px;
+    margin: 0 auto;
+    margin-top: 15px;
+    position: relative;
+    overflow: hidden;
+    transition: all .4s ease;
+    text-align: center;
+}
+.university2{
+    height: 230px; 
+}
+.university h3, .codial h3, .iTeach h3{
+    line-height: 35px;
+}
+
+.show1, .show2, .show3{
+    position: absolute;
+    right: 5px;
+    bottom: 2.5px;
+    font-size: 22px;
+    transition: all .4s ease;
+    cursor: pointer;
+}
+.show{
+    transform: rotate(180deg);
+}
+.task{
+    width: 250px;
+    text-align: center;
+    margin: 0 auto;
+    border: 1px solid black;
+    line-height: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.task:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 1px black;
+    border-radius: 8px;
+}
+.universityTask{
+    top: 0;
+    width: 63%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.877);   
+    border-radius: 0px 10px 10px 0px;
+    padding: 0px 30px 30px 30px;
+    overflow-y: scroll;
+    transition: all .7s ease;
+    position: absolute;
+    opacity: 0;
+    right: -600px;
+}
+.active {
+    z-index: 1;
+    right: 0;
+    opacity: 1;
+}
+.web1{
+    background-color: rgb(247, 247, 247) !important;
+    background: url(../img/web.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 80px;
+    object-fit: cover;
+}
+.algoritm1{
+    background-color: white !important;
+    background: url(../img/algoritm.jpg);
+    object-fit: cover;
+    background-size: 100%;
+    background-position: center;
+}
+.kte1{
+    background: url(../img/KTI.jpg);
+    background-size: 140%;
+    object-fit: cover;
+    background-position: center;
+}
+.kte1 h1, .kte1 h3{
+    color: white;
+}
+.extimollik1{
+    background: url(../img/Extimollik.png);
+    background-size: 35%;
+}
+.front_3{
+    background-color: rgb(247,247,247) !important;
+    background: url(../img/3.jpg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 170px;
+}
+.front_4 {
+    background-color: rgb(247, 247, 247) !important;
+    background: url(../img/4.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 170px;
+}
+.react1 {
+    background-color: rgb(247, 247, 247) !important;
+    background: url(../img/react\ \(2\).png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 10px;
+}
+.project1 {
+    background-color: rgb(247, 247, 247) !important;
+    background: url(../img/project.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 10px;
+}
+.universityTask h3{
+    text-align: center;
+}
+.universityTask::-webkit-scrollbar{
+    width: 5px;
+}
+.universityTask::-webkit-scrollbar-thumb {
+    background-color: black;
+    height: 100px;
+}
+.universityTask h1{
+    text-align: center;
+    line-height: 70px;
+}
+#input1{
+    width: 80% !important;
+    border-radius: 3px;
+    height: 40px;
+    border: 1px solid black;
+}
+.input1{
+    width: 85%;
+    margin: 0 auto;
+}
+.input1 button{
+    width: 60px;
+    height: 40px;
+    background-color: rgb(0, 255, 55);
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.blocknot{
+    width: 85%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px 10px 20px 10px;
+    margin: 0 auto;
+    margin-top: 30px;
+    background-color: rgba(255, 255, 255, 0.842) !important;
+}
+.blocknot1{
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 20px;
+}
+.blocknot1 li{
+    border-bottom: 1px solid black;
+    margin-bottom: 5px;
+    position: relative;
+    outline: none;
+    line-height: 35px;
+}
+.checked{
+    background-color: rgba(0, 0, 0, 0.507);
+    text-decoration: line-through;
+}
+.fa-trash{
+    position: absolute;
+    right: 10px;
+    top: 8px;
+    cursor: pointer;
+    color: rgb(255, 0, 0);
+}
+.checkbox{
+    width: 19px;
+    height: 19px;
+    position: absolute;
+    top: 8px !important;
+    right: 40px !important;
+    cursor: pointer;
+    color: rgb(5, 255, 5);
+    margin: 0 auto;
+}
